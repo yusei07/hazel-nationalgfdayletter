@@ -3,6 +3,17 @@ const nextBtn = document.getElementById("next-btn");
 
 nextBtn.addEventListener("click", showLetter);
 
+// Disable interaction until loaded
+document.addEventListener('DOMContentLoaded', () => {
+    nextBtn.disabled = true;
+  });
+  
+  // When everything is loaded
+  window.addEventListener('load', () => {
+    document.getElementById('loading-screen').style.display = 'none';
+    nextBtn.disabled = false;
+  });
+
 // Step 2: Show letter image with buttons
 function showLetter() {
   contentBox.innerHTML = `
