@@ -55,6 +55,8 @@ function declineLetter() {
   contentBox.innerHTML = `
     <h1>💔 Ishhh</h1>
     <p>r u still mad at mee? sorry yaa hazel I LOVE YOUUU SO MUCH ♡</p>
+    <br>
+    <p>sending u virtual hugsss <3</p>
     <div>
       <button onclick="showLetter()">Again..?</button>
     </div>
