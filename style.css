@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.mansalva-regular {
+  font-family: "Mansalva", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe6ec;
+  font-family: 'Karla', sans-serif;
+}
+h1, h2, h3{
+  font-family: 'Mansalva', sans-serif;
+}
+.card {
+  background: white;
+  padding: 30px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+h1 {
+  color: #ff3366;
+  white-space: nowrap;
+  padding: 2rem;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff3366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #e62e5c;
+}
+img {
+  width: 25%; /* Sets the width to 50% of its parent container */
+  height: auto; /* Height adjusts proportionally */
+  margin-bottom: 2rem;
+  border-radius: 20%;
+}
+
+p{
+  font-size: large;
+}
+
+h2{
+  color: #ff3366;
+  white-space: nowrap;
+}
