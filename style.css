@@ -44,6 +44,15 @@ h1 {
   flex-wrap: wrap;          /* Allows wrapping if the text is too long */
 }
 
+.card video {
+  width: 100%;
+  max-width: 250px;   /* keeps it from getting too big on desktop */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 1rem auto; /* center inside card */
+}
+
 
 button {
   margin-top: 20px;

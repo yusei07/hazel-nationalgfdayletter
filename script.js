@@ -29,8 +29,8 @@ function showLetter() {
 // Step 3: When user clicks Open it
 function openLetter() {
   contentBox.innerHTML = `
-    <video id="loveVideo" autoplay loop muted playsinline style="width: 250px; border-radius: 10px; margin-bottom: 15px;">
-      <source src="povhazel.mp4" type="video/mp4">
+    <video id="loveVideo" autoplay loop playsinline>
+    <source src="povhazel.mp4" type="video/mp4">
     </video>
     <p>Happy girlfriend day hazellll, we’ve been together for a little over a month, thank youuu for always accompanying meeee watching anime and listening to me yap, 
     also not getting icked out whenever I do disgusting stuff HEHEHHEHE, I really wish I could be with you today and give you flowers in person even though ik ur not
@@ -53,8 +53,8 @@ function openLetter() {
 // Step 4: When user clicks No
 function declineLetter() {
   contentBox.innerHTML = `
-    <h1>💔 Ishhh oh okay gt ya</h1>
-    <p>Dont talk to me im mad at u, jk ill never be mad at uuuuu, I LOVE YOUUU SO MUCH ♡</p>
+    <h1>💔 Ishhh</h1>
+    <p>r u still mad at mee? sorry yaa hazel I LOVE YOUUU SO MUCH ♡</p>
     <div>
       <button onclick="showLetter()">Again..?</button>
     </div>
