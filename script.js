@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function showLetter() {
   contentBox.innerHTML = `
     <img src="letter_pixel.gif" alt="Letter">
-    <h3>Do you want to open it hazel? ૮ - ﻌ • ა</h3>
+    <h3>Do you want to open it hazel?૮ - ﻌ • ა</h3>
     <div>
       <button onclick="openLetter()">Open it!</button>
       <button onclick="declineLetter()">No, i hate u</button>

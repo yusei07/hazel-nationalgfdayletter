@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 .mansalva-regular {
   font-family: "Mansalva", sans-serif;
   font-weight: 400;
@@ -17,22 +18,33 @@ body, html {
   align-items: center;
   background: #ffe6ec;
   font-family: 'Karla', sans-serif;
+  padding: 10px; /* Adds a little space on mobile edges */
 }
-h1, h2, h3{
+
+h1, h2, h3 {
   font-family: 'Mansalva', sans-serif;
 }
+
 .card {
   background: white;
   padding: 30px 50px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 90%; /* Prevents card from overflowing on small screens */
 }
 h1 {
   color: #ff3366;
-  white-space: nowrap;
-  padding: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;       /* Centers the text */
+  display: flex;            /* Ensures it's centered vertically */
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;
+  flex-wrap: wrap;          /* Allows wrapping if the text is too long */
 }
+
+
 button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -46,22 +58,25 @@ button {
 button:hover {
   background: #e62e5c;
 }
-img {
-  width: 25%; /* Sets the width to 50% of its parent container */
-  height: auto; /* Height adjusts proportionally */
+
+img, video {
+  width: 60%; /* default smaller size */
+  max-width: 250px;
+  height: auto;
   margin-bottom: 2rem;
   border-radius: 20%;
 }
 
-p{
-  font-size: large;
+p {
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0 5px;
 }
 
-h2{
+h2 {
   color: #ff3366;
   white-space: nowrap;
 }
-
 
 /* Loading screen */
 #loading-screen {
@@ -92,4 +107,50 @@ h2{
 #loading-screen p {
   color: #ff3366;
   font-size: 18px;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px 25px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    padding: 1rem;
+    white-space: normal; /* allow wrapping on small screens */
+  }
+
+  img, video {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  img, video {
+    width: 90%;
+    max-width: 180px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
